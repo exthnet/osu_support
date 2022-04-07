@@ -1,0 +1,4 @@
+#!/bin/bash
+export CUDA_VISIBLE_DEVICES=${OMPI_COMM_WORLD_LOCAL_RANK}
+echo "# CUDA_VISIBLE_DEVICES = ${CUDA_VISIBLE_DEVICES}"
+numactl -l $*
