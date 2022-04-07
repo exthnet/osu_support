@@ -48,7 +48,13 @@ job_4n4p_icol.sh
 
 # memo
 nccl有効化ビルドのconfigureははこんな感じ？
-$ ../configure --enable-cuda -enable-ncclomb --prefix=`pwd` CC=mpicc CXX=mpicxx
 
-# オプションが足りなくて通らない場合はこんな感じか？
-# $ ../configure --enable-cuda -enable-ncclomb --prefix=`pwd` CC=mpicc CXX=mpicxx --includedir=$CPATH --with-nccl=/home/center/opt/x86_64/apps/cuda/11.6.2/nccl/2.12.7
+```
+$ ../configure --enable-cuda -enable-ncclomb --prefix=`pwd` CC=mpicc CXX=mpicxx
+```
+
+オプションが足りなくて通らない場合はこんな感じか？
+
+```
+$ ../configure --enable-cuda -enable-ncclomb --prefix=`pwd` CC=mpicc CXX=mpicxx --includedir=$CPATH --with-nccl=/home/center/opt/x86_64/apps/cuda/11.6.2/nccl/2.12.7
+```
