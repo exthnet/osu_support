@@ -1,4 +1,4 @@
-osu-micro-benchmarks をまとめて実行するためのスクリプト群。
+OSU Micro-Benchmarks をまとめて実行するためのスクリプト群。
 env.sh にmodule設定を書いて、bench.shを実行するだけで良い。
 実行後はresult.shを実行すればグラフの生成まで行ってくれる。
 測定対象を調整したい場合は各shファイルを調整すること。
